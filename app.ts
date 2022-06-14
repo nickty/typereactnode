@@ -1,13 +1,12 @@
 /** @format */
+class Department {
+  name: string;
 
-function add(n1: number, n2: number) {
-  return n1 + n2;
+  constructor(n: string) {
+    this.name = n;
+  }
 }
 
-const number1 = 5;
-const number2 = 2.2;
-const number3 = 2.2;
+const accounting = new Department('Accounting');
 
-const result = add(number1, number2);
-
-console.log(result);
+console.log(accounting);
